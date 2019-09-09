@@ -6,7 +6,7 @@ import { signupUser } from '../../validations/user.validation'
 
 const router = express.Router();
 
-router.get('/', celebrate({body: signupUser}) ,User.getUser)
+router.post('/', celebrate({body: signupUser}), User.getUser)
 
 
-export default user
+export default router

@@ -1,7 +1,8 @@
 import express from 'express';
 import user from './api/v1/user'
 
-const routes = express.Router()
+const app = express()
 
-routes.use('/user', user);
+app.use('/users', user);
 
+export default app;
